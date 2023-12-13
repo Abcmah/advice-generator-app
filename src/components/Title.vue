@@ -1,10 +1,10 @@
-<script>
-  export default{
-    name:"Title",
-    props:{
-      no:Number
+<script setup>
+  const props = defineProps({
+    no:{
+      type:Number,
+      required:true
     }
-  }
+  }) 
 </script>
 <template>
   <div class="title">
